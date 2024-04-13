@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: "Georgia", serif;
     font-weight: 300;
     text-align: center;
     font-size: 18px;
@@ -37,18 +37,192 @@ p {
     color: #000;
     border-radius: 5px;
     padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Georgia", serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: block;
-    margin: 0 auto 20px; /* Center and add margin to stack vertically */
+    margin: 20px auto 20px; /* Center and add margin to stack vertically */
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
         7px 7px 20px 0px rgba(0, 0, 0, .1),
         4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
 }
+/*Button 1 Styling*/
+.btn-1 {
+    background: rgba(175, 25, 70, 1);
+  background: linear-gradient(0deg, rgb(175, 28, 70) 0%, rgb(211, 19, 77) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-1:before,
+  .btn-1:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(211, 19, 77);
+    transition: all 0.3s ease;
+  }
+  .btn-1:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-1:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-1:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-1:hover:hover:before {
+    height: 100%;
+  }
+  .btn-1:hover:after {
+    width: 100%;
+  }
+  .btn-1 span:hover{
+     color: rgba(211, 19, 77);
+  }
+  .btn-1 span:before,
+  .btn-1 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(211, 19, 77);
+    transition: all 0.3s ease;
+  }
+  .btn-1 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-1 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-1 span:hover:before {
+    height: 100%;
+  }
+  .btn-1 span:hover:after {
+    width: 100%;
+  }
+  
+  /*Button 2 Styling*/
+  .btn-2 {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  .btn-2:after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background-color: rgb(11, 153, 247);
+  background-image: linear-gradient(315deg, rgb(39, 226, 255) 0%, rgb(173, 14, 231) 74%);
+    transition: all 0.3s ease;
+  }
+  .btn-2:hover {
+    background: transparent;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    color: #fff;
+  }
+  .btn-2:hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
 
-/* Add your custom styles for btn-1, btn-2, and btn-3 */
+/*Button 3 Styling*/
+.btn-3 {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .btn-3 span {
+    background: rgb(216, 189, 7);
+  background: linear-gradient(0deg, rgb(231, 213, 13) 0%, rgba(216, 189, 7) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn-3 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-3 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-3:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-3:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
