@@ -9,7 +9,7 @@ By completing this project, you will learn to:
 - Design engaging button animations with CSS.
 - Master the use of CSS transitions and animations for interactive effects.
 
-![alt text](./images/image.png)
+![alt text](./images/Screenshot 2024-04-14 at 19-14-45 Magic Buttons.png)
 
 ## Project Overview
 
