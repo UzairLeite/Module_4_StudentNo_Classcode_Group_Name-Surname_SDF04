@@ -58,10 +58,9 @@ p {
     height: 40px;
     line-height: 42px;
     padding: 0;
-    border: none;
-    
+    border: none; 
   }
-  .btn-2 span {
+  .btn-1 span {
     position: relative;
     display: block;
     width: 100%;
@@ -153,6 +152,7 @@ p {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
+  
   /*Button 3 Styling*/
   .btn-3 {
     border: none;
